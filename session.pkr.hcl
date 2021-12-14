@@ -1,7 +1,7 @@
 source "amazon-ebs" "ubuntu" {
-  ami_name      = "learn-packer-linux-aws"
+  ami_name      = "packer-in-cicd"
   instance_type = "t2.micro"
-  region        = "us-west-2"
+  region        = "us-east-1"
   source_ami_filter {
     filters = {
       name                = "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*"
